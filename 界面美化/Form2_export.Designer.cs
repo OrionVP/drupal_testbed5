@@ -105,4 +105,11 @@
             // 
             // toolStripButton3
             // 
-     
+            this.toolStripButton3.Enabled = false;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(93, 54);
+            this.toolStripButton3.Text = "删除";
+            // 
+            // toolStr
