@@ -112,4 +112,11 @@
             this.toolStripButton3.Size = new System.Drawing.Size(93, 54);
             this.toolStripButton3.Text = "删除";
             // 
-            // toolStr
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(93, 54);
+            this.toolStripButton4.Text = "关闭";
+            this.toolStripButton4.Click += new System.EventHandler(this
