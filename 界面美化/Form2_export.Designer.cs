@@ -168,4 +168,14 @@
             this.label8.Location = new System.Drawing.Point(394, 119);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 15);
-            this.label8
+            this.label8.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.Location = new System.Drawing.Point(897, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(202, 45);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "选中下方商品，填写所需信息\r\n即可创建销售订单。\r\nps：未审核。\r
