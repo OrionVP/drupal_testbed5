@@ -178,4 +178,14 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(202, 45);
             this.label6.TabIndex = 11;
-            this.label6.Text = "选中下方商品，填写所需信息\r\n即可创建销售订单。\r\nps：未审核。\r
+            this.label6.Text = "选中下方商品，填写所需信息\r\n即可创建销售订单。\r\nps：未审核。\r\n";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(890, 91);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 25);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "创建订单";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(t
