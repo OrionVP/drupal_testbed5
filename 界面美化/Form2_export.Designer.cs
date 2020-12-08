@@ -188,4 +188,16 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "创建订单";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(t
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(642, 87);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(147, 25);
+            this.textBox4.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize =
