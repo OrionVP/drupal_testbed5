@@ -200,4 +200,14 @@
             // 
             // label5
             // 
-            this.label5.AutoSize =
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(584, 91);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "利润：";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(387, 84);
+            this.textBox3.Name = "textBox3";
