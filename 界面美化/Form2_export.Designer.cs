@@ -219,4 +219,14 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawin
+            this.label4.Location = new System.Drawing.Point(298, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "售价(元)：";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(115, 84);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(1
