@@ -239,4 +239,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(57, 87);
             this.label3.Name = "label3";
-            this.lab
+            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "数量：";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(385, 28);
+            this.comboBox1.Name = "comboBo
