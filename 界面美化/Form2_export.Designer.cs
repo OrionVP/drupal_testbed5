@@ -292,4 +292,14 @@
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Doc
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 206);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1105, 77);
+            this.panel2.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(728, 33);
+            this.button2.Name = "button2";
+            this.button2.Size = new 
