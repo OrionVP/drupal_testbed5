@@ -229,4 +229,14 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(115, 84);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1
+            this.textBox2.Size = new System.Drawing.Size(127, 25);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(57, 87);
+            this.label3.Name = "label3";
+            this.lab
