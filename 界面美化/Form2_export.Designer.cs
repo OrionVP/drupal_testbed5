@@ -282,4 +282,14 @@
             // 
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Locati
+            this.panel1.Location = new System.Drawing.Point(0, 57);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1105, 149);
+            this.panel1.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Doc
