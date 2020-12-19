@@ -312,4 +312,15 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(359, 35);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new 
+            this.textBox5.Size = new System.Drawing.Size(335, 25);
+            this.textBox5.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(188, 38);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 15);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "按商品编号/名称搜索：";
+            //
