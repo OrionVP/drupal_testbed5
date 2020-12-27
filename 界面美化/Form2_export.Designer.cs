@@ -323,4 +323,16 @@
             this.label7.Size = new System.Drawing.Size(165, 15);
             this.label7.TabIndex = 1;
             this.label7.Text = "按商品编号/名称搜索：";
-            //
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 283);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1105, 316);
+            this.panel3.TabIndex = 4;
+            // 
+            // panel5
+         
