@@ -335,4 +335,14 @@
             this.panel3.TabIndex = 4;
             // 
             // panel5
-         
+            // 
+            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(231, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(874, 316);
+            this.panel5.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUse
