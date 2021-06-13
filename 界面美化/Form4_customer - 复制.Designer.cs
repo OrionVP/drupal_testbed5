@@ -1,7 +1,7 @@
 
 ﻿namespace 界面美化
 {
-    partial class Form6_goods
+    partial class Form5_supplier
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6_goods));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5_supplier));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -117,7 +117,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(802, 3);
+            this.button2.Location = new System.Drawing.Point(816, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 31);
             this.button2.TabIndex = 2;
@@ -130,13 +130,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(142, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 15);
+            this.label1.Size = new System.Drawing.Size(263, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "按商品编号/商品名称/拼音码搜索：";
+            this.label1.Text = "按供应商名称/拼音码/公司名称搜索：";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(416, 7);
+            this.textBox1.Location = new System.Drawing.Point(432, 7);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(345, 25);
             this.textBox1.TabIndex = 0;
@@ -160,7 +160,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(247, 43);
             this.button1.TabIndex = 1;
-            this.button1.Text = "商品类别设置";
+            this.button1.Text = "供应商类别设置";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -202,7 +202,7 @@
             this.panel4.Size = new System.Drawing.Size(766, 507);
             this.panel4.TabIndex = 3;
             // 
-            // Form6_goods
+            // Form5_supplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,8 +211,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form6_goods";
-            this.Text = "Form4_supplier";
+            this.Name = "Form5_supplier";
+            this.Text = "Form5_supplier";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form4_customer_FormClosed);
             this.Load += new System.EventHandler(this.Form4_customer_Load);
