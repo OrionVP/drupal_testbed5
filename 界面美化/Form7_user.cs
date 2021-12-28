@@ -37,4 +37,16 @@ namespace 界面美化
             conn.Close();
             treeView1.ExpandAll();
             //用户资料的生成
-            SqlConnection conn1 = new SqlConnection(
+            SqlConnection conn1 = new SqlConnection(str);
+            conn1.Open();
+            string sql1 = "select 姓名,权限 from 用户信息表";
+            DataSet dataset1 = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
+            adapter.Fill(dataset1, "用户信息表");
+            dataGridView1.DataSource = dataset1.Tables["用户信息表"];
+            conn1.Close();
+        }
+        public class select {
+            public static String cname;
+        }
+        private void button1_Click(obj
