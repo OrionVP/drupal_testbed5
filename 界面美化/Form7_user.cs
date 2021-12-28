@@ -25,4 +25,16 @@ namespace 界面美化
             TreeNode root = new TreeNode("所有用户");
             String sql = "select 权限 from 用户种类 ";
             DataSet dataset = new DataSet();
-            S
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            SqlCommand mycom = new SqlCommand(sql, conn);
+            SqlDataReader myread = mycom.ExecuteReader();
+            while (myread.Read())
+            {
+                root.Nodes.Add(myread[0].ToString());
+            }
+            treeView1.Nodes.Add(root);
+            conn.Close();
+            treeView1.ExpandAll();
+            //用户资料的生成
+            SqlConnection conn1 = new SqlConnection(
