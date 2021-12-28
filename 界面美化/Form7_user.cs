@@ -49,4 +49,18 @@ namespace 界面美化
         public class select {
             public static String cname;
         }
-        private void button1_Click(obj
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_customertype fct = new Form_customertype();
+            fct.Owner = this;
+            fct.ShowDialog();
+        }
+
+        private void Form4_customer_Load(object sender, EventArgs e)
+        {
+            //树的生成
+            TreeNode root = new TreeNode("所有用户");
+            String sql = "select * from 用户种类 ";
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+  
