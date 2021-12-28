@@ -63,4 +63,17 @@ namespace 界面美化
             String sql = "select * from 用户种类 ";
             DataSet dataset = new DataSet();
             SqlConnection conn = new SqlConnection(str);
-  
+            conn.Open();
+            SqlCommand mycom = new SqlCommand(sql, conn);
+            SqlDataReader myread = mycom.ExecuteReader();
+            while (myread.Read())
+            {
+                root.Nodes.Add(myread[0].ToString());
+            }
+            treeView1.Nodes.Add(root);
+            conn.Close();
+            treeView1.ExpandAll();
+            //用户资料的生成
+            SqlConnection conn1 = new SqlConnection(str);
+            conn1.Open();
+    
