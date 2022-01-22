@@ -100,4 +100,16 @@ namespace 界面美化
                     new SolidBrush(Color.Black), e.CellBounds, sf);
 
                 e.Handled = true;
-    
+            }
+        }
+        //搜索按钮
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Trim() != String.Empty)
+            {
+                String sql = "select 姓名,权限 from 用户信息表 where 姓名 like '" + textBox1.Text.Trim() + "%'" ;
+                SqlConnection conn = new SqlConnection(str);
+                conn.Open();
+                SqlCommand mycom = new SqlCommand(sql,conn);
+                mycom.ExecuteNonQuery();
+                DataSet dataset 
