@@ -86,4 +86,18 @@ namespace 界面美化
 
         private void dataGridView1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            if (e.ColumnIndex == -1 
+            if (e.ColumnIndex == -1 && e.RowIndex > -1)
+            {
+
+                StringFormat sf = new StringFormat(StringFormat.GenericDefault);
+
+                sf.Alignment = StringAlignment.Center;
+
+                e.PaintBackground(e.CellBounds, true);
+
+                e.Graphics.DrawString((e.RowIndex + 1).ToString(), this.Font,
+
+                    new SolidBrush(Color.Black), e.CellBounds, sf);
+
+                e.Handled = true;
+    
