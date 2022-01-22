@@ -112,4 +112,13 @@ namespace 界面美化
                 conn.Open();
                 SqlCommand mycom = new SqlCommand(sql,conn);
                 mycom.ExecuteNonQuery();
-                DataSet dataset 
+                DataSet dataset = new DataSet();
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                adapter.Fill(dataset, "用户信息表");
+                dataGridView1.DataSource = dataset.Tables["用户信息表"];
+            }
+        }
+
+        private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            String sql = "select 姓名,权限 from 用户信息表 where 权限='" + treeView
