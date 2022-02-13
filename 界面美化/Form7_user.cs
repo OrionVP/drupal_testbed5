@@ -130,4 +130,19 @@ namespace 界面美化
             SqlConnection conn = new SqlConnection(str);
             conn.Open();
             DataSet dataset1 = new DataSet();
-            SqlDataAdapter adapter = new SqlDataAdapter(s
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+            adapter.Fill(dataset, "用户信息表");
+            dataGridView1.DataSource = dataset.Tables["用户信息表"];
+            conn.Close();
+        }
+        //添加
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Form_adduser f = new Form_adduser();
+            f.Owner = this;
+            f.ShowDialog();
+
+        }
+
+        private void Form4_customer_FormClosed(object sender, FormClosedEventArgs e)
+      
