@@ -145,4 +145,18 @@ namespace 界面美化
         }
 
         private void Form4_customer_FormClosed(object sender, FormClosedEventArgs e)
-      
+        {
+            Form_menu fm = new Form_menu();
+            fm = (Form_menu)this.Owner;
+            fm.Deletetabpage("操作员设置");
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            select.cname = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            Form_userchange f = new Form_userchange();
+            f.Owner = this;
+            f.ShowDialog();
+        }
+
+        private void toolStripBut
