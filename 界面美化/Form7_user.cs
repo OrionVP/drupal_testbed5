@@ -159,4 +159,17 @@ namespace 界面美化
             f.ShowDialog();
         }
 
-        private void toolStripBut
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            String sql = "delete  from 用户信息表 where 姓名='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'" ;
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            SqlCommand mycom = new SqlCommand(sql, conn);
+            mycom.ExecuteNonQuery();        
+            conn.Close();
+            refresh();
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+ 
