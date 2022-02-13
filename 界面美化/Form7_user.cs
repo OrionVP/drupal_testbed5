@@ -121,4 +121,13 @@ namespace 界面美化
 
         private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            String sql = "select 姓名,权限 from 用户信息表 where 权限='" + treeView
+            String sql = "select 姓名,权限 from 用户信息表 where 权限='" + treeView1.SelectedNode.Text + "'";
+            if (treeView1.SelectedNode.Text == "所有用户")
+            {
+                sql = "select 姓名,权限 from 用户信息表";
+            }
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            DataSet dataset1 = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(s
