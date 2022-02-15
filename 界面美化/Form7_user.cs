@@ -172,4 +172,14 @@ namespace 界面美化
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
- 
+            this.Close();
+        }
+        
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form_usertype f = new Form_usertype();
+            f.Owner = this;
+            f.ShowDialog();
+        }
+    }
+}
