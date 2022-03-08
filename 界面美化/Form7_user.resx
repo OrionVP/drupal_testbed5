@@ -123,4 +123,9 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAAB
+        iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAdqSURBVGhD1ZsHUxRLFIXn1wMKJoKYBQygGDCAmIACEyog
+        CCoYUAkiKiYMoNCvvn7by4a7Oz13ZmE9Vaessmd7+kzfvmmGwJQYf/78Me/fvzeTk5NmaGjI3Lp1y/T2
+        9pobN27Yf2/fvm3u379vJiYmzMzMjPnx40fql6VF4sLX1tbM79+/zZMnT0xbW5vZtm2bqaio8GZlZaU5
+        ePCguXPnjvn69at9cKVAYsK/f/9uHjx4YE6dOmV27twpiopKHlpTU5O1jPn5ebO+vp66W3zEFs7uYq7b
+        t28XF58UsYSzZ89aK0jiAaiFI/jevXtm//794kJLRaz
