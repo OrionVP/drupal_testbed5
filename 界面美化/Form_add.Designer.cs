@@ -88,4 +88,15 @@
             // 
             // label4
             // 
-            this.label4
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(61, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "联系人：";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(76, 150);
+            this.label5.Name = "la
