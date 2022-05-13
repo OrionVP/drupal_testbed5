@@ -110,4 +110,17 @@
             this.label6.Location = new System.Drawing.Point(361, 153);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 15);
-         
+            this.label6.TabIndex = 5;
+            this.label6.Text = "区域：";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(76, 200);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 15);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "地址：";
+            // 
+            // label8
+       
