@@ -195,4 +195,17 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(425, 147);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.
+            this.textBox4.Size = new System.Drawing.Size(183, 25);
+            this.textBox4.TabIndex = 15;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(134, 197);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(474, 25);
+            this.textBox5.TabIndex = 16;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(134, 251);
+            thi
