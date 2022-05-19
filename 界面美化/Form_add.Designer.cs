@@ -165,4 +165,13 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(82, 15);
             this.label12.TabIndex = 11;
-            this.label12.Text =
+            this.label12.Text = "收款期限：";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Yellow;
+            this.textBox1.Location = new System.Drawing.Point(134, 50);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(183, 25);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.
