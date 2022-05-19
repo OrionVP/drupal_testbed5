@@ -186,4 +186,13 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = 
+            this.textBox3.Location = new System.Drawing.Point(134, 99);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(474, 25);
+            this.textBox3.TabIndex = 14;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(425, 147);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.
