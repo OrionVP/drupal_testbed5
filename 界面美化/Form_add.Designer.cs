@@ -134,4 +134,15 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Locati
+            this.label9.Location = new System.Drawing.Point(46, 304);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 15);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "开户银行：";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(46, 353);
+            this.label10.Name = "label10";
+ 
