@@ -123,4 +123,15 @@
             this.label7.Text = "地址：";
             // 
             // label8
-       
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(361, 254);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 15);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "电话：";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Locati
