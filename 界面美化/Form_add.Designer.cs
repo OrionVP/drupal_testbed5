@@ -239,4 +239,12 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(183, 25);
             this.textBox10.TabIndex = 21;
-            this.textBox10.KeyPress += new System.Windows.Forms.Key
+            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox10_KeyPress);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(134, 147);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Draw
