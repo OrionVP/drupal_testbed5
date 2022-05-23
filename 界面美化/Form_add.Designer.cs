@@ -230,4 +230,13 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(134, 350);
             this.textBox9.Name = "textBox9";
-            this
+            this.textBox9.Size = new System.Drawing.Size(474, 25);
+            this.textBox9.TabIndex = 20;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(134, 394);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(183, 25);
+            this.textBox10.TabIndex = 21;
+            this.textBox10.KeyPress += new System.Windows.Forms.Key
