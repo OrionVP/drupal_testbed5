@@ -268,4 +268,14 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "取消退出";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += n
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Location = new System.Drawing.Point(35, 512);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(625, 53);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+         
