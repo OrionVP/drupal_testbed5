@@ -258,4 +258,14 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "确认添加";
             this.button1.UseVisualStyleBackColor = true;
-            this.butt
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(373, 467);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(163, 39);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "取消退出";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += n
