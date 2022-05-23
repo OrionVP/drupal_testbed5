@@ -278,4 +278,16 @@
             this.groupBox1.Size = new System.Drawing.Size(625, 53);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
-         
+            this.groupBox1.Text = "提示：";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(50, 26);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(112, 15);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "名称一定要填写";
+            // 
+            // dateTimePicker1
+            //
