@@ -290,4 +290,14 @@
             this.label13.Text = "名称一定要填写";
             // 
             // dateTimePicker1
-            //
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(434, 397);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(171, 25);
+            this.dateTimePicker1.TabIndex = 27;
+            // 
+            // Form_add
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+          
