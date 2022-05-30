@@ -330,4 +330,17 @@
             this.Controls.Add(this.label1);
             this.Name = "Form_add";
             this.Text = "添加";
-            this.L
+            this.Load += new System.EventHandler(this.Form_add_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Window
