@@ -367,4 +367,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.D
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+    }
+}
