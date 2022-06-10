@@ -35,4 +35,11 @@ namespace 界面美化
                     SqlConnection conn1 = new SqlConnection(str);
                     conn1.Open();
                     string sql1 = "insert into 客户信息表 values('" + textBox1.Text.Trim() + "','" + textBox2.Text.Trim() + "','" + textBox3.Text.Trim() + "','" +
-                        textBox6.Text.Trim() + "','" + comboBox1.Text + "','" + textBox4.Text.Trim() + "','" + textBox5.Text.Trim() + "','" + t
+                        textBox6.Text.Trim() + "','" + comboBox1.Text + "','" + textBox4.Text.Trim() + "','" + textBox5.Text.Trim() + "','" + textBox7.Text.Trim() +
+                        "','" + textBox8.Text.Trim() + "','" + textBox9.Text.Trim() + "','" + textBox10.Text.Trim() + "','" + dateTimePicker1.Value + "')";
+                    SqlCommand mycom = new SqlCommand(sql1, conn1);
+                    mycom.ExecuteNonQuery();
+                    conn1.Close();
+                    MessageBox.Show("添加成功");
+                    Form4_customer f4;
+                    f4 = (Form4_customer)this.
