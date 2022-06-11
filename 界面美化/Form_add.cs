@@ -42,4 +42,15 @@ namespace 界面美化
                     conn1.Close();
                     MessageBox.Show("添加成功");
                     Form4_customer f4;
-                    f4 = (Form4_customer)this.
+                    f4 = (Form4_customer)this.Owner;
+                    f4.refresh();
+                    //更新系统日志
+                    String logsql = "insert into 系统日志 values('"+Login.User.name+"','"+"添加客户"+"','"+DateTime.Now+"')";
+                    SqlConnection log = new SqlConnection(str);
+                    log.Open();
+                    SqlCommand logcom = new SqlCommand(logsql,log);
+                    logcom.ExecuteNonQuery();
+                }
+                else
+                {
+                    label1.Tex
