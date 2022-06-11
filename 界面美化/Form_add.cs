@@ -53,4 +53,9 @@ namespace 界面美化
                 }
                 else
                 {
-                    label1.Tex
+                    label1.Text = "供应商名称：";
+                    SqlConnection conn1 = new SqlConnection(str);
+                    conn1.Open();
+                    string sql1 = "insert into 供应商信息表 values('" + textBox1.Text.Trim() + "','" + textBox2.Text.Trim() + "','" + textBox3.Text.Trim() + "','" +
+                        textBox6.Text.Trim() + "','" + comboBox1.Text + "','" + textBox4.Text.Trim() + "','" + textBox5.Text.Trim() + "','" + textBox7.Text.Trim() +
+                    
