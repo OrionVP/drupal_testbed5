@@ -66,4 +66,15 @@ namespace 界面美化
                     Form5_supplier f;
                     f = (Form5_supplier)this.Owner;
                     f.refresh();
-         
+                    //更新系统日志
+                    String logsql = "insert into 系统日志 values('" + Login.User.name + "','" + "添加供应商" + "','" + DateTime.Now + "')";
+                    SqlConnection log = new SqlConnection(str);
+                    log.Open();
+                    SqlCommand logcom = new SqlCommand(logsql, log);
+                    logcom.ExecuteNonQuery();
+                }
+                this.Close();
+            }
+        }
+
+     
