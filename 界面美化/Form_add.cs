@@ -89,4 +89,15 @@ namespace 界面美化
                 DataSet dataset1 = new DataSet();
                 SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
                 adapter.Fill(dataset1, "客户种类");
-           
+                comboBox1.DataSource = dataset1.Tables["客户种类"];
+                comboBox1.DisplayMember = "客户类别";
+                conn1.Close();
+            }
+            else
+            {
+                label1.Text = "供应商名称：";
+                SqlConnection conn1 = new SqlConnection(str);
+                conn1.Open();
+                string sql1 = "select 供应商类别 from 供应商种类";
+                DataSet dataset1 = new DataSet();
+    
