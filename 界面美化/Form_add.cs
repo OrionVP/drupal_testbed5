@@ -77,4 +77,16 @@ namespace 界面美化
             }
         }
 
-     
+        private void Form_add_Load(object sender, EventArgs e)
+        {
+            
+            if (owner.text == "客户名称：")
+            {
+                label1.Text = "客户名称：";
+                SqlConnection conn1 = new SqlConnection(str);
+                conn1.Open();
+                string sql1 = "select 客户类别 from 客户种类";
+                DataSet dataset1 = new DataSet();
+                SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
+                adapter.Fill(dataset1, "客户种类");
+           
