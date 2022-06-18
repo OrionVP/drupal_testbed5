@@ -124,4 +124,13 @@ namespace 界面美化
             if (str.CompareTo("八") < 0) return "A";
             if (str.CompareTo("嚓") < 0) return "B";
             if (str.CompareTo("咑") < 0) return "C";
-            if (str.CompareTo("妸") < 0) retu
+            if (str.CompareTo("妸") < 0) return "D";
+            if (str.CompareTo("发") < 0) return "E";
+            if (str.CompareTo("旮") < 0) return "F";
+            if (str.CompareTo("铪") < 0) return "G";
+            if (str.CompareTo("讥") < 0) return "H";
+            if (str.CompareTo("咔") < 0) return "J";
+            if (str.CompareTo("垃") < 0) return "K";
+            if (str.CompareTo("嘸") < 0) return "L";
+            if (str.CompareTo("拏") < 0) return "M";
+            if (str.CompareTo("噢")
