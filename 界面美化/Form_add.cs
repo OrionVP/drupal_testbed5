@@ -100,4 +100,17 @@ namespace 界面美化
                 conn1.Open();
                 string sql1 = "select 供应商类别 from 供应商种类";
                 DataSet dataset1 = new DataSet();
-    
+                SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
+                adapter.Fill(dataset1, "供应商种类");
+                comboBox1.DataSource = dataset1.Tables["供应商种类"];
+                comboBox1.DisplayMember = "供应商类别";
+                conn1.Close();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private voi
