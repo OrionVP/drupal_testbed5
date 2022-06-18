@@ -113,4 +113,15 @@ namespace 界面美化
             this.Close();
         }
 
-        private voi
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.Text = GetPY(textBox1.Text.Trim());
+        }
+        public string ConvertToPY(string str)
+        {
+
+            if (str.CompareTo("吖") < 0) return str;
+            if (str.CompareTo("八") < 0) return "A";
+            if (str.CompareTo("嚓") < 0) return "B";
+            if (str.CompareTo("咑") < 0) return "C";
+            if (str.CompareTo("妸") < 0) retu
