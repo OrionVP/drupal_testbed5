@@ -142,4 +142,22 @@ namespace 界面美化
             if (str.CompareTo("哇") < 0) return "T";
             if (str.CompareTo("夕") < 0) return "W";
             if (str.CompareTo("丫") < 0) return "X";
-            if (str.CompareTo("
+            if (str.CompareTo("帀") < 0) return "Y";
+            if (str.CompareTo("咗") < 0) return "Z";
+            return str;
+
+
+        }
+        public string GetPY(string str)
+        {
+            int i = str.Trim().Length;
+            string st = "";
+            for (int t = 0; t < i; t++)
+            {
+                st += ConvertToPY(str.Trim().Substring(t, 1));
+
+            }
+            return st;
+        }
+
+        private void textBox10_KeyPress(object sender, KeyPressEve
