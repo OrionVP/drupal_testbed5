@@ -133,4 +133,13 @@ namespace 界面美化
             if (str.CompareTo("垃") < 0) return "K";
             if (str.CompareTo("嘸") < 0) return "L";
             if (str.CompareTo("拏") < 0) return "M";
-            if (str.CompareTo("噢")
+            if (str.CompareTo("噢") < 0) return "N";
+            if (str.CompareTo("妑") < 0) return "O";
+            if (str.CompareTo("七") < 0) return "P";
+            if (str.CompareTo("亽") < 0) return "Q";
+            if (str.CompareTo("仨") < 0) return "R";
+            if (str.CompareTo("他") < 0) return "S";
+            if (str.CompareTo("哇") < 0) return "T";
+            if (str.CompareTo("夕") < 0) return "W";
+            if (str.CompareTo("丫") < 0) return "X";
+            if (str.CompareTo("
