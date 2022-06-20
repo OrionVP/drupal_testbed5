@@ -160,4 +160,12 @@ namespace 界面美化
             return st;
         }
 
-        private void textBox10_KeyPress(object sender, KeyPressEve
+        private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
+    }
+}
