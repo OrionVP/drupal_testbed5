@@ -100,4 +100,15 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(46, 150);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(8
+            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "客户类别：";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(361, 153);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 15);
+            this.label6.TabIndex = 5;
+            this.label6.Text =
