@@ -145,4 +145,16 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(46, 353);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Si
+            this.label10.Size = new System.Drawing.Size(82, 15);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "银行账户：";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(76, 397);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 15);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "欠款：";
+     
