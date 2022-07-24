@@ -157,4 +157,16 @@
             this.label11.Size = new System.Drawing.Size(52, 15);
             this.label11.TabIndex = 10;
             this.label11.Text = "欠款：";
-     
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(346, 404);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 15);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "收款期限：";
+            // 
+            // textBox1
+            // 
+            this.textB
