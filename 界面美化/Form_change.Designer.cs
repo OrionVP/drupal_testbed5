@@ -78,3 +78,15 @@
             this.label2.Text = "拼音码：";
             // 
             // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(46, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "公司名称：";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.P
