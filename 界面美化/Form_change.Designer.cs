@@ -169,4 +169,14 @@
             // 
             // textBox1
             // 
-            this.textB
+            this.textBox1.BackColor = System.Drawing.Color.Yellow;
+            this.textBox1.Location = new System.Drawing.Point(134, 50);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(183, 25);
+            this.textBox1.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(449, 50);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = ne
