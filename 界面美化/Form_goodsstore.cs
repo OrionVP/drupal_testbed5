@@ -2,4 +2,21 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.Sql
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace 界面美化
+{
+    public partial class Form_goodsstore : Form
+    {
+        public Form_goodsstore()
+        {
+            InitializeComponent();
+        }
+        string str = "Server=LAPTOP-17RT7OKE;Database=库存管理系统;Trusted_Connection=Yes;Connect Timeout=90";
+
+        public cl
