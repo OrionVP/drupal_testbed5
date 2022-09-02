@@ -45,4 +45,16 @@ namespace 界面美化
             dataGridView1.DataSource = dataset1.Tables["商品库存"];
             conn1.Close();
         }
-        private void Form_goodsstore_Load(object sender,
+        private void Form_goodsstore_Load(object sender, EventArgs e)
+        {
+            //树的生成
+            TreeNode root = new TreeNode("所有商品");
+            String sql = "select * from 商品种类 ";
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            SqlCommand mycom = new SqlCommand(sql, conn);
+            SqlDataReader myread = mycom.ExecuteReader();
+            while (myread.Read())
+            {
+                root.Nodes.Add(my
