@@ -35,4 +35,14 @@ namespace 界面美化
         }
         public void refresh()
         {
-            //商品资料的
+            //商品资料的生成
+            SqlConnection conn1 = new SqlConnection(str);
+            conn1.Open();
+            string sql1 = "select * from 商品库存";
+            DataSet dataset1 = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
+            adapter.Fill(dataset1, "商品库存");
+            dataGridView1.DataSource = dataset1.Tables["商品库存"];
+            conn1.Close();
+        }
+        private void Form_goodsstore_Load(object sender,
