@@ -57,4 +57,16 @@ namespace 界面美化
             SqlDataReader myread = mycom.ExecuteReader();
             while (myread.Read())
             {
-                root.Nodes.Add(my
+                root.Nodes.Add(myread[0].ToString());
+            }
+            treeView1.Nodes.Add(root);
+            conn.Close();
+            treeView1.ExpandAll();
+            //商品资料的生成
+            SqlConnection conn1 = new SqlConnection(str);
+            conn1.Open();
+            string sql1 = "select * from 商品库存";
+            DataSet dataset1 = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
+            adapter.Fill(dataset1, "商品库存");
+            dataGridView1.DataSource = dataset1.T
