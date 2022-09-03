@@ -69,4 +69,15 @@ namespace 界面美化
             DataSet dataset1 = new DataSet();
             SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
             adapter.Fill(dataset1, "商品库存");
-            dataGridView1.DataSource = dataset1.T
+            dataGridView1.DataSource = dataset1.Tables["商品库存"];
+            conn1.Close();
+        }
+
+        private void treeView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            String sql = "select 商品库存.* from 商品资料,商品库存 where 商品资料.类别='" + treeView1.SelectedNode.Text + "' and 商品资料.商品编号=商品库存.商品编号";
+            if (treeView1.SelectedNode.Text == "所有商品")
+            {
+                sql = "select * from 商品库存";
+            }
+            DataSet dataset = n
