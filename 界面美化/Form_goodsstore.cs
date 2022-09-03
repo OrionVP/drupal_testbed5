@@ -80,4 +80,16 @@ namespace 界面美化
             {
                 sql = "select * from 商品库存";
             }
-            DataSet dataset = n
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            DataSet dataset1 = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+            adapter.Fill(dataset, "商品库存");
+            dataGridView1.DataSource = dataset.Tables["商品库存"];
+            conn.Close();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+    
