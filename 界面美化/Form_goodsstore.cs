@@ -103,4 +103,11 @@ namespace 界面美化
             SqlConnection conn1 = new SqlConnection(str);
             conn1.Open();
             string sql1 = "select * from 商品库存 order by 最后销售时间";
-           
+            DataSet dataset1 = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql1, conn1);
+            adapter.Fill(dataset1, "商品库存");
+            dataGridView1.DataSource = dataset1.Tables["商品库存"];
+            conn1.Close();
+        }
+    }
+}
