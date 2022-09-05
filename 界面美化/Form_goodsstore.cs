@@ -92,4 +92,15 @@ namespace 界面美化
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-    
+            select.goods = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            Form_goodsstore_change f = new Form_goodsstore_change();
+            f.Owner = this;
+            f.ShowDialog();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn1 = new SqlConnection(str);
+            conn1.Open();
+            string sql1 = "select * from 商品库存 order by 最后销售时间";
+           
