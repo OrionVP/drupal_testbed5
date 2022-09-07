@@ -36,4 +36,19 @@ namespace 界面美化
                 if (root.Nodes[i].Text == "请输入新的类别名称")
                 {
                     MessageBox.Show("请先输入新的类别名称，再在进行操作");
+                    return false;
+                }
                     
+            }
+            return true;
+        }
+
+        private void Form_customertype_Load(object sender, EventArgs e)
+        {
+            
+            String sql = "select * from 商品种类 ";
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            SqlCommand mycom = new SqlCommand(sql, conn);
+            SqlDataReader myread = mycom.Exe
