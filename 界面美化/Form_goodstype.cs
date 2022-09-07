@@ -24,4 +24,16 @@ namespace 界面美化
         public void refresh(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
-            for (int i =
+            for (int i = 0; i < root.Nodes.Count; i++)
+            {
+                dataGridView1.Rows.Add(root.Nodes[i].Text, root.Text);
+            }
+        }
+        public Boolean Iswrite(object sender, EventArgs e)
+        {
+            for (int i = 0; i < root.Nodes.Count; i++)
+            {
+                if (root.Nodes[i].Text == "请输入新的类别名称")
+                {
+                    MessageBox.Show("请先输入新的类别名称，再在进行操作");
+                    
