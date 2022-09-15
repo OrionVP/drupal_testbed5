@@ -51,4 +51,20 @@ namespace 界面美化
             SqlConnection conn = new SqlConnection(str);
             conn.Open();
             SqlCommand mycom = new SqlCommand(sql, conn);
-            SqlDataReader myread = mycom.Exe
+            SqlDataReader myread = mycom.ExecuteReader();
+            while (myread.Read())
+            {
+                root.Nodes.Add(myread[0].ToString());
+            }
+            treeView1.Nodes.Add(root);
+            treeView1.ExpandAll();
+            refresh(sender,e);
+            conn.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Iswrite(sender, e))
+            {
+                root.Nodes.Add("请输入新的类别名称");
+                treeVie
