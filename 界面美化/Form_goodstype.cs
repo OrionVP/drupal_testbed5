@@ -82,4 +82,20 @@ namespace 界面美化
         private void button2_Click(object sender, EventArgs e)
         {
                 for (int i = 0; i < root.Nodes.Count; i++)
-              
+                {
+                    if (select == root.Nodes[i].Text)
+                    {
+                        root.Nodes[i].Remove();
+                    }
+                }
+                refresh(sender, e);
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            select = e.Node.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+                for (int i = 0; i < root.Nodes.Count; i++
