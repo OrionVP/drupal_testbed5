@@ -125,4 +125,15 @@ namespace 界面美化
               mycom.ExecuteNonQuery();
               conn.Close();
               String sql1 = "insert into 商品种类 values('";
-              for (int i = 0; i < data
+              for (int i = 0; i < dataGridView1.RowCount-1; i++)
+              {
+                if (i > 0)
+                    sql1 += ",('";
+                 sql1 += dataGridView1.Rows[i].Cells[0].Value.ToString() + "','所有商品')";  
+              }
+              SqlConnection conn1 = new SqlConnection(str);
+              conn1.Open();
+              SqlCommand mycom1 = new SqlCommand(sql1, conn1);
+              mycom1.ExecuteNonQuery();
+              conn1.Close();
+              Form6
