@@ -115,4 +115,14 @@ namespace 界面美化
             this.Close();
         }
 
-        private void button5_Click(object sender, Eve
+        private void button5_Click(object sender, EventArgs e)
+        {
+              refresh(sender, e);
+              String sql = "delete from 商品种类";
+              SqlConnection conn = new SqlConnection(str);
+              conn.Open();
+              SqlCommand mycom = new SqlCommand(sql, conn);
+              mycom.ExecuteNonQuery();
+              conn.Close();
+              String sql1 = "insert into 商品种类 values('";
+              for (int i = 0; i < data
