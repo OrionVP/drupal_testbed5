@@ -136,4 +136,15 @@ namespace 界面美化
               SqlCommand mycom1 = new SqlCommand(sql1, conn1);
               mycom1.ExecuteNonQuery();
               conn1.Close();
-              Form6
+              Form6_goods fs;
+              fs =(Form6_goods)this.Owner;
+              fs.refresh();
+            //更新系统日志
+            String logsql = "insert into 系统日志 values('" + Login.User.name + "','" + "对商品种类进行操作" + "','" + DateTime.Now + "')";
+            SqlConnection log = new SqlConnection(str);
+            log.Open();
+            SqlCommand logcom = new SqlCommand(logsql, log);
+            logcom.ExecuteNonQuery();
+            this.Close();
+        }
+       
