@@ -159,4 +159,8 @@ namespace 界面美化
                 dataGridView1.Rows.Add(root.Nodes[i].Text, root.Text);
             }
             refresh(sender, e);
-            dataGridView1.Fo
+            dataGridView1.Focus();
+            treeView1.LabelEdit = false;
+        }
+    }
+}
