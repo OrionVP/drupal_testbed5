@@ -15,4 +15,17 @@ namespace 界面美化
     {
         public Form_im_report()
    
-     
+        {
+            InitializeComponent();
+        }
+        string str = "Server=LAPTOP-17RT7OKE;Database=库存管理系统;Trusted_Connection=Yes;Connect Timeout=90";
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form_ex_auditing_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form_menu fm = new Form_menu();
+            fm = (Form_menu)this.
