@@ -61,3 +61,15 @@ namespace 界面美化
             if (textBox3.Text.Trim()!=String.Empty)
                 sql = "select * from 采购订单 where 供应商='"+textBox3.Text.Trim()+"' and 采购日期 > '"+ dateTime1+ "' and 采购日期 < '"+dateTime2+"'" ;
             else
+                sql = "select * from 采购订单 where 采购日期 > '" + dateTime1 + "' and 采购日期 < '" + dateTime2 + "'";
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+            adapter.Fill(dataset, "采购订单");
+            dataGridView1.DataSource = dataset.Tables["采购订单"];
+        }
+
+ 
+    }
+}
