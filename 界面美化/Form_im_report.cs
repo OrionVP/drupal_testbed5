@@ -40,4 +40,14 @@ namespace 界面美化
             conn.Open();
             SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
             adapter.Fill(dataset, "采购订单");
-            dataGrid
+            dataGridView1.DataSource = dataset.Tables["采购订单"];
+        }
+        private void Form_ex_auditing_Load(object sender, EventArgs e)
+        {
+            String sql = "select * from 采购订单";
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql,conn);
+            adapter.Fill(dataset, "采购订单");
+            dataGridView1.DataSource = datas
