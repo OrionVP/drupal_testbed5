@@ -50,4 +50,14 @@ namespace 界面美化
             conn.Open();
             SqlDataAdapter adapter = new SqlDataAdapter(sql,conn);
             adapter.Fill(dataset, "采购订单");
-            dataGridView1.DataSource = datas
+            dataGridView1.DataSource = dataset.Tables["采购订单"];
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime dateTime1 = dateTimePicker2.Value.AddDays(-1);
+            DateTime dateTime2 = dateTimePicker2.Value.AddDays(1);
+            String sql = null;
+            if (textBox3.Text.Trim()!=String.Empty)
+                sql = "select * from 采购订单 where 供应商='"+textBox3.Text.Trim()+"' and 采购日期 > '"+ dateTime1+ "' and 采购日期 < '"+dateTime2+"'" ;
+            else
