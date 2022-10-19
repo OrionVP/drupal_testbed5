@@ -277,3 +277,170 @@ namespace 界面美化
                 tabControl1.TabPages["tabgoodsstore"].Show();
         }
         private void 蓝色经典ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            styleManager1.ManagerStyle = eStyle.Office2010Blue;
+        }
+
+        private void 灰色简约ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            styleManager1.ManagerStyle = eStyle.Office2010Black;
+        }
+
+        private void 银色金属ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            styleManager1.ManagerStyle = eStyle.Office2010Silver;
+        }
+
+        private void 默认皮肤ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            styleManager1.ManagerStyle = eStyle.Office2007VistaGlass;
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            Form_password fp = new Form_password();
+            fp.ShowDialog();
+        }
+
+        private void 采购订单审核ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!tabControlCheckHave(tabControl1, "采购订单审核"))
+            {
+                TabPage tab = new TabPage();
+                tab.Name = "tabimauditing";
+                tab.Text = "采购订单审核";
+                Form_im_auditing f = new Form_im_auditing();
+                f.Owner = this;
+                f.TopLevel = false;     //设置为非顶级控件
+                tab.Controls.Add(f);
+                tabControl1.TabPages.Add(tab);
+                f.Show();
+                tabControl1.SelectTab("tabimauditing");
+            }
+            else
+                tabControl1.TabPages["tabimauditing"].Show();
+        }
+
+        private void 操作员设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!tabControlCheckHave(tabControl1, "操作员设置"))
+            {
+                TabPage tab = new TabPage();
+                tab.Name = "tabuser";
+                tab.Text = "操作员设置";
+                Form7_user f = new Form7_user();
+                f.Owner = this;
+                f.TopLevel = false;     //设置为非顶级控件
+                tab.Controls.Add(f);
+                tabControl1.TabPages.Add(tab);
+                f.Show();
+                tabControl1.SelectTab("tabuser");
+            }
+            else
+                tabControl1.TabPages["tabuser"].Show();
+        }
+
+        private void 采购报表ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!tabControlCheckHave(tabControl1, "采购报表"))
+            {
+                TabPage tab = new TabPage();
+                tab.Name = "tabimreport";
+                tab.Text = "采购报表";
+                Form_im_report f = new Form_im_report();
+                f.Owner = this;
+                f.TopLevel = false;     //设置为非顶级控件
+                tab.Controls.Add(f);
+                tabControl1.TabPages.Add(tab);
+                f.Show();
+                tabControl1.SelectTab("tabimreport");
+                //更新系统日志
+                String logsql = "insert into 系统日志 values('" + Login.User.name + "','" + "查看了采购报表" + "','" + DateTime.Now + "')";
+                SqlConnection log = new SqlConnection(str);
+                log.Open();
+                SqlCommand logcom = new SqlCommand(logsql, log);
+                logcom.ExecuteNonQuery();
+            }
+            else
+                tabControl1.TabPages["tabexreport"].Show();
+        }
+
+        private void 销售报表ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!tabControlCheckHave(tabControl1, "销售报表"))
+            {
+                TabPage tab = new TabPage();
+                tab.Name = "tabexreport";
+                tab.Text = "销售报表";
+                Form_ex_report f = new Form_ex_report();
+                f.Owner = this;
+                f.TopLevel = false;     //设置为非顶级控件
+                tab.Controls.Add(f);
+                tabControl1.TabPages.Add(tab);
+                f.Show();
+                tabControl1.SelectTab("tabexreport");
+                //更新系统日志
+                String logsql = "insert into 系统日志 values('" + Login.User.name + "','" + "查看了销售报表" + "','" + DateTime.Now + "')";
+                SqlConnection log = new SqlConnection(str);
+                log.Open();
+                SqlCommand logcom = new SqlCommand(logsql, log);
+                logcom.ExecuteNonQuery();
+            }
+            else
+                tabControl1.TabPages["tabexreport"].Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!tabControlCheckHave(tabControl1, "系统日志"))
+            {
+                TabPage tab = new TabPage();
+                tab.Name = "tabsystemlog";
+                tab.Text = "系统日志";
+                Form8_systemlog f = new Form8_systemlog();
+                f.Owner = this;
+                f.TopLevel = false;     //设置为非顶级控件
+                tab.Controls.Add(f);
+                tabControl1.TabPages.Add(tab);
+                f.Show();
+                tabControl1.SelectTab("tabsystemlog");
+                //更新系统日志
+                String logsql = "insert into 系统日志 values('" + Login.User.name + "','" + "查看了系统日志" + "','" + DateTime.Now + "')";
+                SqlConnection log = new SqlConnection(str);
+                log.Open();
+                SqlCommand logcom = new SqlCommand(logsql, log);
+                logcom.ExecuteNonQuery();
+            }
+            else
+                tabControl1.TabPages["tabsystemlog"].Show();
+        }
+
+        private void 客户类别设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_add.owner.text = "客户名称：";
+            Form_add f = new Form_add();
+            f.Owner = this;
+            f.ShowDialog();
+        }
+
+        private void 供应商类别设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_add.owner.text = "供应商名称：";
+            Form_add f = new Form_add();
+            f.Owner = this;
+            f.ShowDialog();
+        }
+
+        private void 商品类别设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_addgoods f = new Form_addgoods();
+            f.Owner = this;
+            f.ShowDialog();
+        }
+
+        private void 库存管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
