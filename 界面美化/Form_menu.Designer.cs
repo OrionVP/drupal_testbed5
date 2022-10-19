@@ -767,3 +767,203 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.Color.Blue;
+            this.label7.Location = new System.Drawing.Point(144, 313);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 19);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "采购模块：";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(38, 297);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 78);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(492, 192);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(22, 15);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "笔";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(428, 192);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "label5";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(302, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 15);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "笔,未收回款项：";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(231, 192);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "label3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(145, 192);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "未审核订单：";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(143, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "业务模块：";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(38, 142);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 78);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Form_menu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1601, 1055);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form_menu";
+            this.Text = "库存管理系统";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_menu_FormClosed);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 基本信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 出库管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 入库管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 库存管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 统计报表ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 系统管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 窗口ToolStripMenuItem;
+        private DevComponents.DotNetBar.StyleManager styleManager1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 皮肤ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 蓝色经典ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 银色金属ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 灰色怀旧ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 默认皮肤ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripMenuItem 销售出库ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 采购进货ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 操作员设置ToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem 客户资料ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 客户类别设置ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 供应商资料ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 供应商类别设置ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 商品资料ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 商品类别设置ToolStripMenuItem;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripButton toolStripButton8;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSplitButton toolStripButton9;
+        private System.Windows.Forms.ToolStripMenuItem 蓝色经典ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 灰色简约ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 银色金属ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 默认皮肤ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ToolStripMenuItem 商品库存ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 销售订单审核ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 采购订单审核ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 采购报表ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 销售报表ToolStripMenuItem;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+    }
+}
