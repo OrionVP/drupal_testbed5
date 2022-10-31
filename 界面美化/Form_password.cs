@@ -25,4 +25,16 @@ namespace 界面美化
             {
                 if (textBox2.Text.Trim() == textBox3.Text.Trim())
                 {
-                    String sql = "update 用户登录表 set 密码='" + textBox
+                    String sql = "update 用户登录表 set 密码='" + textBox3.Text.Trim() + "' where 姓名='" + Login.User.name + "'";
+                    SqlConnection conn = new SqlConnection(str);
+                    conn.Open();
+                    SqlCommand mycom = new SqlCommand(sql, conn);
+                    int i = mycom.ExecuteNonQuery();
+                    if (i > 0)
+                    {
+                        MessageBox.Show("修改成功");
+                    }
+                    conn.Close();
+                    this.Close();
+                }
+      
