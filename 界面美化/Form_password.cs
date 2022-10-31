@@ -37,4 +37,18 @@ namespace 界面美化
                     conn.Close();
                     this.Close();
                 }
-      
+                else
+                    MessageBox.Show("确认密码和新密码不一致");
+            }
+            else
+            {
+                MessageBox.Show("原密码错误");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}
