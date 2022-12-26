@@ -39,4 +39,17 @@ namespace 界面美化
                 }
                     
             }
-            return 
+            return true;
+        }
+
+        private void Form_customertype_Load(object sender, EventArgs e)
+        {
+            
+            String sql = "select * from 用户种类 ";
+            DataSet dataset = new DataSet();
+            SqlConnection conn = new SqlConnection(str);
+            conn.Open();
+            SqlCommand mycom = new SqlCommand(sql, conn);
+            SqlDataReader myread = mycom.ExecuteReader();
+            while (myread.Read())
+            {
