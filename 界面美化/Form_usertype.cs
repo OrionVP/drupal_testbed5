@@ -67,4 +67,19 @@ namespace 界面美化
             {
                 root.Nodes.Add("请输入新的类别名称");
                 treeView1.LabelEdit = true;
-  
+                treeView1.ExpandAll();
+                root.Nodes[(root.Nodes.Count-1)].BeginEdit();
+                refresh(sender, e);
+            }
+        }
+
+        private void treeView1_AfterLabelEdit(object sender, NodeLabelEditEventArgs e)
+        {
+            refresh(sender,e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+                for (int i = 0; i < root.Nodes.Count; i++)
+                {
+               
