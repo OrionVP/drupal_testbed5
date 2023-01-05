@@ -97,4 +97,21 @@ namespace 界面美化
 
         private void button3_Click(object sender, EventArgs e)
         {
-                for (int i = 0; i < r
+                for (int i = 0; i < root.Nodes.Count; i++)
+                {
+                    if (select == root.Nodes[i].Text)
+                    {
+                        treeView1.LabelEdit = true;
+                        root.Nodes[i].BeginEdit();
+                    }
+
+                }
+                refresh(sender, e);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void but
