@@ -138,4 +138,17 @@ namespace 界面美化
             Form7_user fc;
             fc = (Form7_user)this.Owner;
             fc.refresh();
-        
+        }
+        private void treeView1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            refresh(sender, e);
+        }
+        private void treeView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            for (int i = 0; i < root.Nodes.Count; i++)
+            {
+                dataGridView1.Rows.Add(root.Nodes[i].Text, root.Text);
+            }
+            refresh(sender, e);
+            dataGridView1.Focus
